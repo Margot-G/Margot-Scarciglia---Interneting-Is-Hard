@@ -1,0 +1,446 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+body{
+  font-size: 18px;
+  font-family: 'Exo', sans-serif;
+  font-synthesis: none;
+
+}
+
+
+#Home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-icons{
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  top: 13vh;
+  left: 5%;
+}
+
+.about-icon.
+.works-icon,
+.contacts-icon{
+  width: 100%;
+
+}
+
+.fade-in-about{
+  animation-name: fade-in-icon;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+.fade-in-works{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  animation-name: fade-in-icon;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+.fade-in-contact{
+  animation-name: fade-in-icon;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade-in-icon {
+  0%{opacity:0%;}
+  80%{opacity: 0%;}
+  100% {opacity:100%;}
+}
+
+.about-icon{
+    animation: rotation-icon 8s infinite linear;
+}
+
+.works-icon{
+  animation: rotation-icon 8s infinite linear;
+}
+
+.contacts-icon{
+  animation: rotation-icon 8s infinite linear;
+}
+
+@keyframes rotation-icon {
+  0%{transform: rotatez(0deg);}
+  100%{transform: rotateZ(359deg);}
+}
+
+.div-logo{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-centrale{
+  width: auto;
+  animation-name: logo-inizio;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes logo-inizio{
+  0% {opacity: 0; width: 0;}
+  65% {opacity: 100%; width: 100%;}
+  80% {opacity: 80%; width: 60%;}
+  100% {opacity: 100%; width: 100%;}
+}
+
+#about{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about-text-img{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text-img div{
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.bio{
+  color: #fc008b;
+  border: 2px solid #fc008b;
+  height: 100%;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  width: 380px;
+  padding: 50px;
+}
+
+
+.button{
+  border: 1px solid #fc008b;
+  color: #fc008b;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+a.button:link{
+  color: #fc008b;
+}
+
+a.button:hover{
+  color: #f2f2f2;
+  background-color: #fc008b;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p:last-of-type{
+  margin-bottom: 50px;
+}
+
+
+#contact{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-section{
+  text-align: center;
+  border: 1px solid #fc008b;
+
+  width: 80%;
+  margin: 40px 0;
+  padding: 50px;
+  color: #fc008b;
+}
+
+.contact-section h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-section p{
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+a.email:link{
+  color:#f2f2f2;
+}
+
+a.email:hover{
+  color:#fc008b;
+}
+
+/* FOOTER */
+
+.footer{
+width: 100%;
+height: 200px;
+color: #f2f2f2;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+border-top: 2px solid #fc008b; opacity: 0.6;;
+}
+
+.footer-section{
+margin-top: 100px;
+
+width: 100%;
+display: flex: center;
+flex-direction: column;
+}
+
+.works,
+.home,
+.about{
+    display: flex;
+  justify-content: center;
+}
+
+.about{
+  margin-left: 20px;
+}
+
+.footer-section h1{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.footer-section p{
+  font-size: 15px;
+}
+
+.home a,
+.About-me a,
+.works a{
+  color: #fc008b;
+}
+
+.home a:hover,
+.About-me a:hover,
+.works a:hover{
+  color: #f2f2f2;
+}
+
+.Instagram a,
+.Behance a,
+.Linkedin a,
+.px a,
+.Github a{
+  color: #f2f2f2;
+}
+
+.Instagram a:hover,
+.Behance a:hover,
+.Linkedin a:hover,
+.px a:hover,
+.Github a:hover{
+  color: #fc008b;
+}
+
+
+
+/* WORK PAGE */
+
+.body-photos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-photos{
+  width: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#video-bg{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.wrap {
+  transform: rotatez(90deg);
+position: absolute;
+top: 80%;
+left: -60px;
+padding: 0;
+}
+
+.wrap-style {
+  color: #fc008b; opacity: 0.5;
+}
+
+.wrap h1{
+  font-size: 40px;
+}
+
+.text-header h1{
+  text-align: left;
+  display: block;
+}
+
+#photos{
+  display: flex;
+  justify-content: center;
+}
+
+.foto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+img.works{
+   width: 350px;
+   margin: 20px;
+}
+
+.led-foto,
+.dark,
+.veil,
+.graphic{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.led-title{
+  align-self: flex-start;
+  width: 150px;
+}
+
+.led-title h1
+.dark h1,
+.veil h1,
+.graphic h1{
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fc008b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f2f2f2;
+}
+
+@media only screen and (min-width: 961px){
+  .div-logo{
+    width: 700px;
+    }
+
+    @keyframes logo-inizio{
+      0% {opacity: 0; width: 0;}
+      65% {opacity: 100%; width: 100%;}
+      80% {opacity: 80%; width: 30%;}
+      100% {opacity: 100%; width: 43%;}
+    }
+.wrap h1{
+      font-size: 100px;
+    }
+
+.led-title h1{
+      font-size: 80px;
+    }
+
+img.works{
+       width: 700px;
+       margin: 20px;
+    }
+
+#carousel {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#carousel .slide {
+    display: inline-block;
+}
+
+.led-title{
+  align-self: flex-end;
+  width: 150px;
+}
+
+.led-foto,
+.dark,
+.veil,
+.graphic{
+  flex-wrap: nowrap;
+}
+
+.footer-section{
+margin-top: 100px;
+
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+}
+
+.works{
+  margin-left: 20px;
+}
+.home{
+  display: flex;
+justify-content: flex-end;
+}
+
+}
