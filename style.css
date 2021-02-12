@@ -12,6 +12,7 @@ body{
   font-synthesis: none;
 }
 
+
 .arrow-top{
   position: absolute;
   transform: rotateZ(90deg);
@@ -33,10 +34,10 @@ body{
 
 .nav-icons{
   transform: rotateZ(270deg);
-  width: 80px;
+  width: 60px;
   position: absolute;
   bottom: 5%;
-  left: 40%;
+  left: auto;
 }
 
 .about-icon.
@@ -152,7 +153,7 @@ body{
   justify-content: center;
   align-items: center;
 
-  width: 300px;
+  width: 290px;
   padding: 30px;
 }
 
@@ -243,7 +244,6 @@ p:last-of-type{
   border: 1px solid #fc008b;
   color: #f2f2f2;
   min-height: 150px;
-  min-width: 300px;
   padding: 7px;
   resize: none;
 }
@@ -448,6 +448,7 @@ position: absolute;
 top: 65%;
 left: 5%;
 padding: 0;
+font-size: 38px;
 }
 
 .wrap-style {
@@ -474,22 +475,22 @@ padding: 0;
 }
 
 img.works{
-   width: 350px;
+   width: 300px;
    margin: 20px;
 }
 
 img.works-illu{
-   width: 350px;
+   width: 300px;
    margin: 20px;
 }
 
 img.works-g{
-   width: 350px;
+   width: 300px;
    margin: 20px;
 }
 
 img.lofi{
-  width: 350px;
+  width: 300px;
   margin: 20px;
 }
 
@@ -509,29 +510,43 @@ img.lofi{
 }
 
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #fc008b;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #f2f2f2;
+@media only screen and (max-width: 960px){
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 961px){
   .div-logo{
-    width: 700px;
+    width: 650px;
     }
 
     @keyframes logo-inizio{
       0% {opacity: 0; width: 0;}
       65% {opacity: 100%; width: 100%;}
       80% {opacity: 80%; width: 30%;}
-      100% {opacity: 100%; width: 43%;}
+      100% {opacity: 100%; width: 100%;}
+    }
+
+body{
+      cursor: url("images/cursore.png"), auto;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #fc008b;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f2f2f2;
+    }
+
+.cursor{
+     cursor: url("images/cursore.png"), auto;
     }
 
 .nav-icons{
@@ -577,6 +592,12 @@ img.lofi{
 
   width: 380px;
   padding: 40px;
+}
+
+/* FORM */
+.form-row textarea {
+
+  min-width: 300px;
 }
 
 /* WORK SECTIONS */
@@ -666,14 +687,6 @@ justify-content: flex-end;
   display: flex;
 justify-content: center;
 padding: 0;
-}
-
-.cursor{
-  cursor: url("images/cursor.png"), auto;
-}
-
-.cursor-s{
-  cursor: url("images/cursor-s.png"), auto;
 }
 
 .form-row input[type="text"]{
